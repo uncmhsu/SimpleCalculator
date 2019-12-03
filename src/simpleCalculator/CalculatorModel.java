@@ -1,13 +1,22 @@
 package simpleCalculator;
 
 public class CalculatorModel {
-	private int calculationValue;
+	private int additionValue;
+	private int subtractionValue;
 
 	public void addTwoNumbers(int firstNumber, int secondNumber) {
-		calculationValue = firstNumber + secondNumber;
+		additionValue = firstNumber + secondNumber;
 	}
 
-	public int getCalculationValue() {
-		return calculationValue;
+	public void subtractTwoNumbers(int thirdNumber, int fourthNumber) {
+		subtractionValue = thirdNumber + fourthNumber;
+	}
+
+	public int getAdditionValue() {
+		return additionValue;
+	}
+
+	public int getSubtractionValue() {
+		return subtractionValue;
 	}
 }
