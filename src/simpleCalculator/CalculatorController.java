@@ -15,7 +15,7 @@ public class CalculatorController {
 
 		this.theModel = theModel;
 
-		this.theView.addCalculateListener(new AdditionListener());
+		this.theView.additionCalculateListener(new AdditionListener());
 		this.theView.subtractionCalculateListener(new SubtractionListener());
 
 	}

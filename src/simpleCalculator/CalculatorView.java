@@ -109,7 +109,7 @@ public class CalculatorView extends JFrame {
 
 	}
 
-	void addCalculateListener(ActionListener listenForAdditionButton) {
+	void additionCalculateListener(ActionListener listenForAdditionButton) {
 
 		additionButton.addActionListener(listenForAdditionButton);
 

@@ -9,7 +9,7 @@ public class CalculatorModel {
 	}
 
 	public void subtractTwoNumbers(int thirdNumber, int fourthNumber) {
-		subtractionValue = thirdNumber + fourthNumber;
+		subtractionValue = thirdNumber - fourthNumber;
 	}
 
 	public int getAdditionValue() {
