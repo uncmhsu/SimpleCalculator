@@ -31,12 +31,34 @@ public class CalculatorController {
 				firstNumber = theView.getFirstNumber();
 
 				secondNumber = theView.getSecondNumber();
+
+				theView.setAdditionSolution(theModel.getAdditionValue());
+			}
+
+			catch (NumberFormatException ex) {
+
+				System.out.println(ex);
+
+				theView.displayErrorMessage("You Need to Enter 2 Integers");
+
+			}
+
+		}
+
+	}
+
+	class SubtractionListener implements ActionListener {
+
+		public void actionPerformed(ActionEvent e) {
+
+			int thirdNumber, fourthNumber = 0;
+
+			try {
+
 				thirdNumber = theView.getThirdNumber();
 
 				fourthNumber = theView.getFourthNumber();
-				theModel.addTwoNumbers(firstNumber, secondNumber);
 				theModel.subtractTwoNumbers(thirdNumber, fourthNumber);
-				theView.setAdditionSolution(theModel.getAdditionValue());
 				theView.setSubtractionSolution(theModel.getSubtractionValue());
 			}
 
