@@ -31,6 +31,7 @@ public class CalculatorController {
 				firstNumber = theView.getFirstNumber();
 
 				secondNumber = theView.getSecondNumber();
+				theModel.addTwoNumbers(firstNumber, secondNumber);
 
 				theView.setAdditionSolution(theModel.getAdditionValue());
 			}
